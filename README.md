@@ -23,7 +23,7 @@ At least for `3.0.0-preview6.19307.2`, We need to manually add scrips to `head` 
 ```
 <environment include="Development">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
-    <script src="_content/Blazor-Facebook-Analytics/interop.js"></script>
+    <script src="_content/blazorfacebookanalytics/interop.js"></script>
 </environment>
 ```
 https://devblogs.microsoft.com/aspnet/asp-net-core-and-blazor-updates-in-net-core-3-0-preview-6/
