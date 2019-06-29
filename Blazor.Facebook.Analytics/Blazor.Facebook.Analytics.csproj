@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>Library</OutputType>
+
+    <LangVersion>8.0</LangVersion>
+    <RazorLangVersion>3.0</RazorLangVersion>
+    <TypeScriptToolsVersion>latest</TypeScriptToolsVersion>
+
+    <RestoreAdditionalProjectSources>
+      https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json;
+      https://dotnet.myget.org/F/blazor-dev/api/v3/index.json;
+    </RestoreAdditionalProjectSources>
+
+    <RootNamespace>Blazor.Facebook.Analytics</RootNamespace>
+    <AssemblyName>Blazor.Facebook.Analytics</AssemblyName>
+
+    <IsPackable>true</IsPackable>
+    <IncludeContentInPack>false</IncludeContentInPack>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>minhhieugma</Authors>
+    <Company>minhhieugma</Company>
+    <PackageId>Blazor-Facebook-Analytics</PackageId>
+    <Product>Blazor.Facebook.Analytics</Product>
+    <Title>Blazor.Facebook.Analytics</Title>
+    <Description>Blazor extensions for Blazor.Facebook.Analytics.
+Supported platforms: Facebook Pixel, Facebook Analytics</Description>
+    <PackageTags>blazor component facebook pixel analytics</PackageTags>
+    <RepositoryUrl>https://github.com/isc30/blazor-facebook-analytics</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>1.0.0</Version>
+    <RepositoryType>git</RepositoryType>
+    <Copyright>Hieu Le(minhhieugma)</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="3.0.0-preview6.19307.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor.Build" Version="3.0.0-preview6.19307.2" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="**\*.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="**\*.js" LogicalName="blazor:js:%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Scripts\Interop.ts" />
+  </ItemGroup>
+
+</Project>
