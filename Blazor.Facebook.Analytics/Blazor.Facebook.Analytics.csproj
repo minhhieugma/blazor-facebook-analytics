@@ -30,7 +30,7 @@ Supported platforms: Facebook Pixel, Facebook Analytics</Description>
     <PackageTags>blazor component facebook pixel analytics</PackageTags>
     <RepositoryUrl>https://github.com/minhhieugma/blazor-facebook-analytics</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <RepositoryType>git</RepositoryType>
     <Copyright>Hieu Le(minhhieugma)</Copyright>
   </PropertyGroup>
