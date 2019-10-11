@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Demo.SSR
+namespace Demo.SSRV2
 {
     public class Program
     {
@@ -22,8 +22,8 @@ namespace Demo.SSR
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
                     webBuilder.UseStaticWebAssets();
+                    webBuilder.UseStartup<Startup>();
                 });
     }
 }

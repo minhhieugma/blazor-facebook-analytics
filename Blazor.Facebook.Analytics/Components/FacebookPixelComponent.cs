@@ -1,14 +1,13 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.RenderTree;
+﻿using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Rendering;
+using System;
 
 namespace Blazor.Facebook.Analytics.Components
 {
     public class FacebookPixelComponent : ComponentBase, IDisposable
     {
         [Parameter]
-        protected string AppId { get; set; }
+        public string AppId { get; set; }
 
         protected override void BuildRenderTree(RenderTreeBuilder builder)
         {

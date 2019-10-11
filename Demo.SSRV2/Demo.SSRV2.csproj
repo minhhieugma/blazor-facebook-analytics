@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UserSecretsId>396830d7-b74c-4d73-b1e8-63e157e9e092</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blazor.Facebook.Pixel\Blazor.Facebook.Analytics.csproj" />
+  </ItemGroup>
+
+</Project>
